@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt 
+days = ['mon','tue','wed','thurs', 'fri']
+scores = [70,90,64,92,73]
+plt.plot(days,scores)
+plt.title('weather of the week')
+plt.xlabel('days of the week')
+plt.ylabel('score')
+plt.grid(True)
+plt.ylim(0,100)
+plt.plot(days, scores, color='purple', marker='o', linestyle='dashed', linewidth=2)
+plt.title('my weather tracker')
+plt.xlabel('days of the week ')
+plt.ylabel('score')
+plt.grid(True)
+plt.ylim(0,100)
+plt.bar(days, scores , color='orange')
+plt.title('my quiz score bar')
+plt.xlabel('Days of the week')
+plt.ylabel('score')
+plt.ylim(0,100)
+plt.show()
